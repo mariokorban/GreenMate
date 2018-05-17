@@ -27,7 +27,9 @@ class SignUpRequest extends FormRequest
             'firstname' => 'required',
             'lastname' => 'required',
             'email' => 'required|email|unique:users',
-            'password' => 'required|confirmed'
+            'password' => 'required|confirmed',
+            'profile_image' => 'null',
+            'cover_image' => 'null'
         ];
     }
 }

@@ -4,11 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Post extends Model
+class comment extends Model
 {
     //
-
     protected $fillable = [
-        'uid', 'name','post_imageUrl','post_caption'
+        'post_id','u_name','comment_content'
     ];
 }
